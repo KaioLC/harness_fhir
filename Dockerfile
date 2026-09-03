@@ -1,8 +1,8 @@
-FROM node:20-slim
+FROM node:22.13-slim
 
 WORKDIR /app
 
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN npm install -g pnpm
 
 COPY package.json pnpm-lock.yaml* ./
 
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 5173
 
-CMD ["pnpm, "dev", "--host", "0.0.0.0", "--port", "5173"]
+CMD ["pnpm", "dev", "--host", "0.0.0.0", "--port", "5173"]
