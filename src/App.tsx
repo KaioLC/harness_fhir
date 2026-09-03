@@ -53,7 +53,7 @@ export const App: React.FC = () => {
       <main className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
 
         <section className="bg-white p-5 rounded-xl shadow-sm h-fit space-y-4">
-          <h2 className="text-lg font-bold text-gray-800"> Nova Missão (POST)</h2>
+          <h2 className="text-lg font-bold text-gray-800"> Nova Missão</h2>
           <form onSubmit={handleCreateTask} className="space-y-3">
             <div>
               <label className="text-xs font-semibold text-gray-600">Descrição:</label>
@@ -79,14 +79,14 @@ export const App: React.FC = () => {
               </select>
             </div>
             <div>
-              <label className="text-xs font-semibold text-gray-600">Destino (Location):</label>
+              <label className="text-xs font-semibold text-gray-600">Destino:</label>
               <select
                 value={selectedLocation}
                 onChange={e => setSelectedLocation(e.target.value)}
                 className="w-full border p-2 rounded text-sm mt-1"
                 required
               >
-                <option value="">Selecione o leito/sala...</option>
+                <option value="">Selecione o local...</option>
                 {locations.map(loc => (
                   <option key={loc.id} value={loc.id}>{loc.name} ({loc.floor})</option>
                 ))}
