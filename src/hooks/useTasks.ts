@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { FHIRTask } from '../types/fhir';
+import type { FHIRTask } from '../types/fhir';
 import { api } from '../services/api';
 
 export function useTasks(pollingIntervalMs: number = 2000) {

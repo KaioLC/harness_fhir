@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTasks } from './hooks/useTasks';
 import { TaskMissionController } from './components/TaskMissionController';
-import { FHIRDevice, FHIRLocation, FHIRTask } from './types/fhir';
+import type { FHIRDevice, FHIRLocation, FHIRTask } from './types/fhir';
 import { api } from './services/api';
 
 export const App: React.FC = () => {
@@ -154,5 +154,6 @@ export const App: React.FC = () => {
   );
 };
 
+export default App;
 
 

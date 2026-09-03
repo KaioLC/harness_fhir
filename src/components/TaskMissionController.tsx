@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FHIRTask } from '../types/fhir';
+import type { FHIRTask } from '../types/fhir';
 import { api } from '../services/api';
 
 interface Props {

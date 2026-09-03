@@ -1,4 +1,4 @@
-import { FHIRDevice, FHIRLocation, FHIRTask, TaskPatch } from "../types/fhir";
+import type { FHIRDevice, FHIRLocation, FHIRTask, TaskPatch } from "../types/fhir";
 
 const API_BASE_URL = import.meta.env.VITE_API_URL;
 

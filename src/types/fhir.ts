@@ -32,6 +32,7 @@ export interface FHIRTask {
   priority: TaskPriority;
   description?: string;
   focus?: Record<string, any>;
+  owner?: Reference;
   location?: Reference;
   businessStatus?: BusinessStatus;
   authoredOn: string;
